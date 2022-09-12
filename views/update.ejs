@@ -1,0 +1,21 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Star Wars Quote App</title>
+  </head>
+
+  <body>
+    <h1>May Node and Express be with you.</h1>
+
+    <form action="/quotes/<%= quote._id %>" method="post">
+      <!-- <input type="hidden" method="put"/> -->
+      <input type="text" placeholder="name" name="name" value="<%= quote.name %>" />
+      <input type="text" placeholder="quote" name="quote" value="<%= quote.quote %>" />
+      <button type="submit">Submit</button>
+    </form>
+
+      <script src="/main.js"></script>
+  </body>
+</html>
